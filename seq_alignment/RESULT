@@ -1,0 +1,27 @@
+testing ReadMapper.sliding_window with window_length 3... PASSED!
+
+
+*** Be sure to uncomment the other tests when you are ready to run them! ***
+testing ReadMapper.sliding_window with window_length 5... PASSED!
+making sure ReadMapper.sliding_window doesnt report the N character... PASSED!
+making sure ReadMapper.sliding_window reports in all upper-case characters... PASSED!
+testing ReadMapper.build_index with seed_length 2... {'AA': [0, 1], 'TG': [5], 'TT': [3, 4], 'GG': [6, 7], 'AT': [2]}
+PASSED!
+testing ReadMapper.build_index with seed_length 3... PASSED!
+testing ReadMapper.build_index with seed_length 3 with an N character... PASSED!
+testing ReadMapper.__init__... PASSED!
+testing ReadMapper.get_candidate_starts with seed_length 3... PASSED!
+testing ReadMapper.get_candidate_starts with seed_length 2... PASSED!
+testing ReadMapper.get_candidate_starts with seed_length 2 and no matching seed... PASSED!
+testing ReadMapper.score_candidate with seed_length 2, perfect match PASSED!
+testing ReadMapper.score_candidate with seed_length 2, one mismatch PASSED!
+testing ReadMapper.score_candidate with seed_length 2, two mismatches PASSED!
+testing ReadMapper.best_mapping with seed_length 2 and 2 candidate mappings... PASSED!
+testing ReadMapper.best_mapping with seed_length 2 and 2 candidate mappings... PASSED!
+testing ReadMapper.best_mapping with seed_length 2 and no matching seed... PASSED!
+testing ReadMapper.map_reads with seed_length 2 and several reads... PASSED!
+testing ReadMapper.load_reads_from_file with a regular file... PASSED!
+testing ReadMapper.load_reads_from_file with a zipped file... PASSED!
+testing ReadMapper.load_reference_from_file with a regular file... PASSED!
+testing ReadMapper.load_reference_from_file with a zipped file... PASSED!
+testing entire ReadMapper on a real dataset... [(None, inf), (None, inf), (None, inf), (None, inf), (None, inf), (None, inf), (None, inf), (None, inf), (None, inf), (None, inf)]

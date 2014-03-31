@@ -1,0 +1,24 @@
+def edit_dis(str1, str2):
+    if len(str1)==1 and len(str2)==1:
+        if str1[0] !=str2[0]:
+            cost = 1
+        else:
+            cost = 0
+    else:
+        #mismetch here!
+        if str1[0] !=str2[0]:
+           cost = 1
+        else: 
+            cost = 0
+        mismatch_cost = cost+edit_dis(str1[1:], str2[1:])
+        
+        #insertion here!
+        insertion_cost = 1+edit_dis(str1[1:], str2)
+   
+        #deletion here!
+        deletion_cost = 1+edit_dis(str1, str2[1:])
+
+        return min(mismatch_cost, insertion_cost, deletion_cost)    
+
+
+ 
